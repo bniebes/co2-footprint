@@ -25,3 +25,13 @@ It is expected that the file name is 'emission_data.json'.
     - alpinejs-i18n
 - Nginx
 - Docker
+
+### Run Locally
+
+```sh
+docker compose -f compose.yaml up --build
+```
+
+After running the above command, the website is available on localhost port 80.
+
+Open the browser at http://localhost.
