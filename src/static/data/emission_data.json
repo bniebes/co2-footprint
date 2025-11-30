@@ -1,0 +1,317 @@
+[
+    {
+        "name": "ACME",
+        "type": "Company",
+        "emission": 15
+    },
+    {
+        "name": "Example Ltd",
+        "type": "Company",
+        "emission": 5
+    },
+    {
+        "name": "Very Long Name Company Inc",
+        "type": "Company",
+        "emission": 10
+    },
+    {
+        "name": "China",
+        "type": "Country",
+        "emission": 11256
+    },
+    {
+        "name": "USA",
+        "type": "Country",
+        "emission": 5275
+    },
+    {
+        "name": "Indien",
+        "type": "Country",
+        "emission": 2622
+    },
+    {
+        "name": "Russland",
+        "type": "Country",
+        "emission": 1748
+    },
+    {
+        "name": "Japan",
+        "type": "Country",
+        "emission": 1199
+    },
+    {
+        "name": "Deutschland",
+        "type": "Country",
+        "emission": 753
+    },
+    {
+        "name": "Iran",
+        "type": "Country",
+        "emission": 728
+    },
+    {
+        "name": "Südkorea",
+        "type": "Country",
+        "emission": 695
+    },
+    {
+        "name": "Saudi-Arabien",
+        "type": "Country",
+        "emission": 625
+    },
+    {
+        "name": "Kanada",
+        "type": "Country",
+        "emission": 594
+    },
+    {
+        "name": "Stark LLC",
+        "type": "Company",
+        "emission": 44
+    },
+    {
+        "name": "Gerhold-Lehner",
+        "type": "Company",
+        "emission": 83
+    },
+    {
+        "name": "Wunsch, Thiel and Hintz",
+        "type": "Company",
+        "emission": 43
+    },
+    {
+        "name": "Nolan-Ziemann",
+        "type": "Company",
+        "emission": 78
+    },
+    {
+        "name": "Herman-Armstrong",
+        "type": "Company",
+        "emission": 39
+    },
+    {
+        "name": "Kiehn LLC",
+        "type": "Company",
+        "emission": 10
+    },
+    {
+        "name": "Towne and Sons",
+        "type": "Company",
+        "emission": 65
+    },
+    {
+        "name": "Mosciski-Bins",
+        "type": "Company",
+        "emission": 1
+    },
+    {
+        "name": "Hagenes Group",
+        "type": "Company",
+        "emission": 75
+    },
+    {
+        "name": "Hauck-Homenick",
+        "type": "Company",
+        "emission": 60
+    },
+    {
+        "name": "Kertzmann LLC",
+        "type": "Company",
+        "emission": 97
+    },
+    {
+        "name": "Crist Inc",
+        "type": "Company",
+        "emission": 29
+    },
+    {
+        "name": "Tremblay-Pouros",
+        "type": "Company",
+        "emission": 51
+    },
+    {
+        "name": "Funk, Hettinger and Wisoky",
+        "type": "Company",
+        "emission": 91
+    },
+    {
+        "name": "Marquardt, Bradtke and Sawayn",
+        "type": "Company",
+        "emission": 76
+    },
+    {
+        "name": "Corwin, Cruickshank and Carroll",
+        "type": "Company",
+        "emission": 30
+    },
+    {
+        "name": "Schumm-Fisher",
+        "type": "Company",
+        "emission": 80
+    },
+    {
+        "name": "Kuhic-Vandervort",
+        "type": "Company",
+        "emission": 23
+    },
+    {
+        "name": "Romaguera-Fay",
+        "type": "Company",
+        "emission": 49
+    },
+    {
+        "name": "Considine-Morar",
+        "type": "Company",
+        "emission": 65
+    },
+    {
+        "name": "Wisozk-Waters",
+        "type": "Company",
+        "emission": 5
+    },
+    {
+        "name": "Ledner-Smitham",
+        "type": "Company",
+        "emission": 55
+    },
+    {
+        "name": "Zemlak-Deckow",
+        "type": "Company",
+        "emission": 2
+    },
+    {
+        "name": "Lockman and Sons",
+        "type": "Company",
+        "emission": 13
+    },
+    {
+        "name": "Johns-Klein",
+        "type": "Company",
+        "emission": 38
+    },
+    {
+        "name": "Christiansen, Lebsack and Ullrich",
+        "type": "Company",
+        "emission": 78
+    },
+    {
+        "name": "Schneider Group",
+        "type": "Company",
+        "emission": 9
+    },
+    {
+        "name": "Predovic Inc",
+        "type": "Company",
+        "emission": 8
+    },
+    {
+        "name": "Crist-Jenkins",
+        "type": "Company",
+        "emission": 47
+    },
+    {
+        "name": "Reynolds Inc",
+        "type": "Company",
+        "emission": 8
+    },
+    {
+        "name": "Marvin-Fisher",
+        "type": "Company",
+        "emission": 62
+    },
+    {
+        "name": "Schimmel Inc",
+        "type": "Company",
+        "emission": 51
+    },
+    {
+        "name": "Rau-Nader",
+        "type": "Company",
+        "emission": 33
+    },
+    {
+        "name": "Lang LLC",
+        "type": "Company",
+        "emission": 19
+    },
+    {
+        "name": "Pfeffer-Williamson",
+        "type": "Company",
+        "emission": 63
+    },
+    {
+        "name": "Hamill Group",
+        "type": "Company",
+        "emission": 42
+    },
+    {
+        "name": "Pollich LLC",
+        "type": "Company",
+        "emission": 35
+    },
+    {
+        "name": "Fay and Sons",
+        "type": "Company",
+        "emission": 18
+    },
+    {
+        "name": "Roob-Johns",
+        "type": "Company",
+        "emission": 10
+    },
+    {
+        "name": "Upton, Hodkiewicz and Wolf",
+        "type": "Company",
+        "emission": 93
+    },
+    {
+        "name": "Koch LLC",
+        "type": "Company",
+        "emission": 7
+    },
+    {
+        "name": "Weissnat-Hills",
+        "type": "Company",
+        "emission": 48
+    },
+    {
+        "name": "Gusikowski, Turner and Nader",
+        "type": "Company",
+        "emission": 60
+    },
+    {
+        "name": "Dicki-Mueller",
+        "type": "Company",
+        "emission": 85
+    },
+    {
+        "name": "Nicolas, Legros and Hayes",
+        "type": "Company",
+        "emission": 57
+    },
+    {
+        "name": "Jacobson, Dach and Turcotte",
+        "type": "Company",
+        "emission": 90
+    },
+    {
+        "name": "Collins, Kihn and Jacobson",
+        "type": "Company",
+        "emission": 63
+    },
+    {
+        "name": "Denesik-Krajcik",
+        "type": "Company",
+        "emission": 26
+    },
+    {
+        "name": "Bogan LLC",
+        "type": "Company",
+        "emission": 25
+    },
+    {
+        "name": "Hilll-Kuvalis",
+        "type": "Company",
+        "emission": 4
+    }
+]

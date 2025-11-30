@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C02-Footprint</title>
+    <link rel="icon" type="image/x-icon" href="../img/co2.ico">
+    <!--Style-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="stylesheet" href="../style.css">
+    <!--Scripts-->
+    <script src="../i18n.js"></script>
+    <!--AlpineJs I18n-->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.4.0/dist/cdn.min.js"></script>
+    <!--AlpineJS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+</head>
+<body x-data x-cloak>
+<header class="hf-std">
+    <nav>
+        <a href="../" x-text="AlpineI18n.t('homepage')"></a>
+    </nav>
+</header>
+<main class="sub-page-main">
+    <section class="main-section" dir="ltr">
+        <h1 class="sub-page-title" x-text="AlpineI18n.t('imprint')"></h1>
+        <p>Musterfirma GmbH</p>
+        <p>
+            <i class="lbl" x-text="AlpineI18n.t('responsible') + ':'"></i>
+            <span class="no-wrap">Max Mustermann,</span>
+            <span class="no-wrap">Erika Mustermann</span>
+            <br>
+            <i class="lbl" x-text="AlpineI18n.t('address') + ':'"></i>
+            <span class="no-wrap">Musterstraße 42,</span>
+            <span class="no-wrap">01337 Musterstadt,</span>
+            <span class="no-wrap">Deutschland</span>
+        </p>
+        <p>
+            <i class="lbl" x-text="AlpineI18n.t('legalForm') + ':'"></i>
+            <span>Gesellschaft mit beschränkter Haftung (GmbH)</span>
+            <br>
+            <i class="lbl" x-text="AlpineI18n.t('registryCourt') + ':'"></i>
+            <span class="no-wrap">Registergericht Musterstadt</span>
+            <br>
+            <i class="lbl" x-text="AlpineI18n.t('registryNumber') + ':'"></i>
+            <span class="no-wrap">HRB 1337</span>
+        </p>
+        <p>
+            <i class="lbl" x-text="AlpineI18n.t('email') + ':'"></i>
+            <span class="no-wrap">info@musterfirma.de</span>
+            <br>
+            <i class="lbl" x-text="AlpineI18n.t('phone') + ':'"></i>
+            <span class="no-wrap">+49 172 12345678</span>
+        </p>
+    </section>
+</main>
+<footer class="hf-std">
+    <a class="ml-10" href="imprint.html" x-text="AlpineI18n.t('imprint')"></a>
+    <div class="mr-10 inline">
+        <img src="../img/copyright.svg" alt="copyright" width="12px" height="12px">
+        <span>Musterfirma GmbH</span>
+    </div>
+</footer>
+</body>
+</html>

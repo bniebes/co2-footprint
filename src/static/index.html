@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C02-Footprint</title>
+    <link rel="icon" type="image/x-icon" href="img/co2.ico">
+    <!--Style-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <!--Scripts-->
+    <script defer src="index.js"></script>
+    <script defer src="i18n.js"></script>
+    <!--AlpineJs I18n-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.4.0/dist/cdn.min.js"></script>
+    <!--AlpineJS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+</head>
+<body x-data x-cloak>
+<header id="content-header">
+    <img class="ml-10" src="img/co2.svg" alt="C02" width="50px" height="40px">
+    <h1 id="title-lg">CO₂-Footprint</h1>
+    <div id="burger-menu-container" x-data="{ menuOpen: false }">
+        <img src="img/menu-hamburger.svg" alt="menu-open" width="50px" height="40px"
+             x-show="!menuOpen" @click="menuOpen = true">
+        <img src="img/x-close.svg" alt="menu-closed" width="50px" height="40px"
+             x-show="menuOpen" @click="menuOpen = false">
+        <div id="burger-menu" x-show="menuOpen">
+            <table class="w-full">
+                <tbody>
+                <tr>
+                    <td id="lang-cell">
+                        <label for="lang" x-text="AlpineI18n.t('language')"></label>
+                        <select id="lang" @change="setLocale($event.target.value)">
+                            <option value="de" :selected="AlpineI18n.locale === 'de'">Deutsch</option>
+                            <option value="en" :selected="AlpineI18n.locale === 'en'">English</option>
+                            <option value="ar" :selected="AlpineI18n.locale === 'ar'">عربي</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <menu class="pl-15">
+                            <li><a href="legal/imprint.html" x-text="AlpineI18n.t('imprint')"></a></li>
+                            <li><a href="legal/contact.html" x-text="AlpineI18n.t('contact')"></a></li>
+                            <li><a href="legal/licenses.html" x-text="AlpineI18n.t('licenses')"></a></li>
+                        </menu>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+    </div>
+    <h1 id="title-sm">CO₂-Footprint</h1>
+</header>
+<main id="content-main" x-data="Data" x-init="loadData()">
+    <section class="main-section">
+        <h2 class="mt-0 mb-10"><span x-text="AlpineI18n.t('footprint_data')"></span><span> (Mt/p.a)</span></h2>
+        <form class="mb-10" @submit.prevent>
+            <input id="filter-field" type="text" x-model="filterValue"
+                   :placeholder="AlpineI18n.t('filter_placeholder')" aria-label="Filter">
+        </form>
+        <table class="w-full bottom-border-table">
+            <thead>
+            <tr>
+                <td id="name-cell" @click="sortData(keyName)">
+                    <span x-text="AlpineI18n.t('name')"></span>
+                    <img :src="selectArrowSrc(keyName)" src="" alt="" width="10px" height="10px">
+                </td>
+                <td id="type-cell" @click="cycleType()">
+                    <span x-text="AlpineI18n.t('type')"></span>
+                    <img :src="typeSrc" src="" alt="" width="10px" height="10px">
+                </td>
+                <td class="w-100" @click="sortData(keyEmission)">
+                    <span x-text="AlpineI18n.t('emission')"></span>
+                    <img :src="selectArrowSrc(keyEmission)" src="" alt="" width="10px" height="10px">
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <template x-for="item in filteredData">
+                <tr>
+                    <td><span dir="ltr" x-text="item.name"></span></td>
+                    <td>
+                        <img class="img-center" x-show="item.type === typeCompany" src="img/office-building.svg" alt="Company" width="20px" height="20px">
+                        <img class="img-center" x-show="item.type === typeCountry" src="img/location.svg" alt="Country" width="20px" height="20px">
+                    </td>
+                    <td><span dir="ltr" x-text="item.emission"></span></td>
+                </tr>
+            </template>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer class="hf-std">
+    <a class="ml-10" href="legal/imprint.html" x-text="AlpineI18n.t('imprint')"></a>
+    <div class="mr-10 inline">
+        <img src="img/copyright.svg" alt="copyright" width="12px" height="12px">
+        <span>Musterfirma GmbH</span>
+    </div>
+</footer>
+</body>
+</html>

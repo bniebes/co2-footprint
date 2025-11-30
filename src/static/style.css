@@ -1,0 +1,75 @@
+/* AlpineJS x-cloak */
+[x-cloak] {
+    display: none !important;
+}
+
+/* Global */
+
+:root {
+    --std-max-width: 800px;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: 'Space Mono', 'monospace';
+    padding: 0 0 0 calc(100vw - 100%);
+    margin: 0;
+}
+
+/* Classes */
+
+.w-50 { width: 50px; }
+.w-100 { width: 100px; }
+.w-200 { width: 200px; }
+.w-full { width: 100%; }
+
+.m-0 { margin: 0; }
+.mt-0 { margin-top: 0; }
+.ml-10 { margin-left: 10px; }
+.mr-10 { margin-right: 10px; }
+.mb-10 { margin-bottom: 10px; }
+
+.pl-15 { padding-left: 15px; }
+
+.inline { display: inline; }
+
+.lbl { display: inline-block; width: 200px; }
+.no-wrap { white-space: nowrap; }
+
+.img-center { display: block; margin: 0 auto; }
+
+.bottom-border-table td { border-bottom: thin solid; }
+
+.sub-page-title { margin: 0; }
+
+.sub-page-main {
+    height: calc(100vh - (90px + 90px));
+    max-width: var(--std-max-width);
+    margin: 0 auto;
+}
+
+.main-section {
+    width: calc(100% - (10px + 10px));
+    height: calc(100% - (20px));
+    max-width: var(--std-max-width);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.hf-std {
+    height: 90px;
+    max-width: var(--std-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}

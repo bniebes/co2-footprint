@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C02-Footprint</title>
+    <link rel="icon" type="image/x-icon" href="../img/co2.ico">
+    <!--Style-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="stylesheet" href="../style.css">
+    <!--Scripts-->
+    <script src="../i18n.js"></script>
+    <!--AlpineJs I18n-->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.4.0/dist/cdn.min.js"></script>
+    <!--AlpineJS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+</head>
+<body x-data x-cloak>
+<header class="hf-std">
+    <nav>
+        <a href="../" x-text="AlpineI18n.t('homepage')"></a>
+    </nav>
+</header>
+<main class="sub-page-main">
+    <section class="main-section">
+        <h1 class="sub-page-title"  x-text="AlpineI18n.t('licenses')"></h1>
+        <table class="w-full bottom-border-table">
+            <thead>
+            <tr>
+                <td x-text="AlpineI18n.t('name')"></td>
+                <td x-text="AlpineI18n.t('link')">Link</td>
+                <td x-text="AlpineI18n.t('license')">Lizenz</td>
+            </tr>
+            </thead>
+            <tbody>
+            <template x-for="item in other">
+                <tr>
+                    <td><span dir="ltr" x-text="item.name"></span></td>
+                    <td><a :href="item.href" x-text="item.link"></a></td>
+                    <td><a :href="item.licenseLink" x-text="item.license"></a></td>
+                </tr>
+            </template>
+            <template x-for="svg in svgs">
+                <tr>
+                    <td><span dir="ltr" x-text="svg.name"></span></td>
+                    <td><a :href="svg.href"><img :src="svg.img" src="" alt="" width="15px" height="15px"></a></td>
+                    <td><a :href="svg.licenseLink" x-text="svg.license"></a></td>
+                </tr>
+            </template>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer class="hf-std">
+    <a class="ml-10" href="imprint.html" x-text="AlpineI18n.t('imprint')"></a>
+    <div class="mr-10 inline">
+        <img src="../img/copyright.svg" alt="copyright" width="12px" height="12px">
+        <span>Musterfirma GmbH</span>
+    </div>
+</footer>
+<script>
+    const other = [
+        {name: 'Space Mono Font', href: 'https://fonts.google.com/specimen/Space+Mono', link: 'Space Mono', license: 'Open Font License', licenseLink: 'https://fonts.google.com/specimen/Space+Mono/about'},
+        {name: 'Alpine', href: 'https://github.com/alpinejs/alpine', link: 'alpinejs/alpine', license: 'MIT License', licenseLink: 'https://github.com/alpinejs/alpine/blob/main/LICENSE.md'},
+        {name: 'alpinejs-i18n', href: 'https://github.com/rehhouari/alpinejs-i18n', link: 'rehhouari/alpinejs-i18n', license: 'MIT License', licenseLink: 'https://github.com/rehhouari/alpinejs-i18n/blob/main/LICENSE.md'},
+        {name: 'jsDelivr - Open Source CDN', href: 'https://www.jsdelivr.com/', link: 'jsDelivr', license: 'MIT License', licenseLink: 'https://github.com/jsdelivr/jsdelivr/blob/master/LICENSE.md'},
+    ]
+    const svgs = [
+        {name:'Sort SVG Vector', href: 'https://www.svgrepo.com/svg/500697/sort', img: '../img/sort.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Sort Up SVG Vector', href: 'https://www.svgrepo.com/svg/500698/sort-up', img: '../img/sort-up.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Sort Down SVG Vector', href: 'https://www.svgrepo.com/svg/500700/sort-down', img: '../img/sort-down.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Filter SVG Vector', href: 'https://www.svgrepo.com/svg/500559/filter', img: '../img/filter.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Location SVG Vector', href: 'https://www.svgrepo.com/svg/500607/location', img: '../img/location.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Office Building SVG Vector', href: 'https://www.svgrepo.com/svg/500639/office-building', img: '../img/office-building.svg', license: 'MIT License', licenseLink: 'https://github.com/element-plus/element-plus-icons/blob/main/LICENSE'},
+        {name:'Menu Hambuger SVG Vector', href: 'https://www.svgrepo.com/svg/380050/menu-hambuger', img: '../img/menu-hamburger.svg', license: 'MIT License', licenseLink: 'https://github.com/solomon-fibonacci/react-basicons/blob/main/LICENSE'},
+        {name:'X Close Delete SVG Vector', href: 'https://www.svgrepo.com/svg/380138/x-close-delete', img: '../img/x-close.svg', license: 'MIT License', licenseLink: 'https://github.com/solomon-fibonacci/react-basicons/blob/main/LICENSE'},
+        {name:'Co2 SVG Vector', href: 'https://www.svgrepo.com/svg/219712/co2', img: '../img/co2.svg', license: 'CC0 License', licenseLink: 'https://www.svgrepo.com/page/licensing/#CC0'},
+        {name:'Copyright SVG Vector', href: 'https://www.svgrepo.com/svg/389128/copyright', img: '../img/copyright.svg', license: 'ISC License', licenseLink: 'https://lucide.dev/license'},
+    ]
+</script>
+</body>
+</html>
